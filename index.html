@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="hamburger-menu">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="hamburger-label">
+            <span class="hamburger-icon"></span>
+          </label>
+          <ul>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <section id="profile">
+        <div class="profile_pic-container">
+            <img src="profile.jpg" alt="Aditya Reddy's Profile Picture">
+        </div>
+        <div class="profile_text">
+            <p class="profile-p1">Hello, I'm</p>
+            <h1 class="profile-name">Aditya Reddy</h1>
+            <p class="profile-p2">Student</p>
+            <button class="btn btn-color-2" onclick="window.open('resume.pdf')">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+            <div>
+                <div id="socials-container">
+                    <a href="https://www.linkedin.com/in/aditya-reddy-288406234/" target="_blank">
+                        <img src="linkedin.png" alt="My LinkedIn profile" class="icon">
+                    </a>
+                    <a href="https://github.com/Retr0-10" target="_blank">
+                        <img src="github.png" alt="My Github profile" class="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutme">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-aboutme">
+                <img src="aboutme.jpg" alt="Aditya Reddy" class="about-pic">
+            </div>
+            <div class="text-container">
+                <p>
+                    Hi! I'm Aditya, a student who is intrigued by computers and biology.
+                    My enthusiasm for electronics, programming, and sometimes AI
+                    fuels my pursuit of knowledge and has pushed me to develop a mindset of problem-solving.
+                    I'm actively engaged in learning and continuously strive to integrate and enhance these interests in innovative ways.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript (learning)</li>
+                <li>Python</li>
+                <li>GIMP</li>
+                <li>Writing</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="project1.jpg" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Pong</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Retr0-10/Pong', '_blank')">Github</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="project2.jpg" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Minesweeper</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Retr0-10/Minesweeper', '_blank')">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:adityareddy400@gmail.com">adityareddy400@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/aditya-reddy-288406234/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&#169; 2023 Aditya Reddy. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
