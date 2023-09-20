@@ -181,7 +181,7 @@ a:hover{
 }
 
 #contact {
-  background-color: transparent; /* Transparent white background */
+  background-color: transparent; /* Transparent background */
   padding: 40px; /* Add some padding for spacing */
   text-align: center; /* Center-align the content */
 }
@@ -189,11 +189,12 @@ a:hover{
 .title {
   font-size: 40px; /* Adjust the title font size as needed */
   margin-top: 10px;
-  color: white; /* Add margin to separate the title from the text */
+  color: white; /* Title text color */
 }
 
 .section__text__p1 {
   font-size: 18px; /* Adjust the font size of the section text */
+  color: white; /* Section text color */
 }
 
 .contact-info-upper-container {
@@ -205,25 +206,27 @@ a:hover{
 
 .contact-info-container {
   margin: 0 20px; /* Add margin between contact info blocks */
+  color: white; /* Contact info text color */
 }
 
 .icon {
   width: 50px; /* Adjust the icon size as needed */
   height: 50px;
-  display: inline-block;
   vertical-align: middle; /* Vertically center the icons with text */
+  margin-right: 2px; /* Add margin to separate the icon from the text */
 }
 
 .contact-icon {
-  margin-right: 10px; /* Add margin to separate the icon from the text */
+  margin-right: 2px; /* Add margin to separate the icon from the text */
 }
 
 a {
   text-decoration: none; /* Remove underlines from links */
-  color: #ffffff; /* Adjust link color as needed */
+  color: #ffffff; /* Link color */
 }
 
 a:hover {
-  color: #fff0b3;
+  color: #fff0b3; /* Link color on hover */
 }
+
 
