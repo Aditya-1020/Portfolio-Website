@@ -1,94 +1,229 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed&display=swap');
-
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    /*
+    font-family: 'Bayon', sans-serif;
     background: hsla(0, 0%, 0%, 1);
     background: radial-gradient(circle, hsla(0, 0%, 0%, 1) 0%, hsla(251, 69%, 35%, 1) 92%);
     background: -moz-radial-gradient(circle, hsla(0, 0%, 0%, 1) 0%, hsla(251, 69%, 35%, 1) 92%);
     background: -webkit-radial-gradient(circle, hsla(0, 0%, 0%, 1) 0%, hsla(251, 69%, 35%, 1) 92%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#331C96", GradientType=1 );
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
-    */
+
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-p{
+nav {
+    display: flex; /* 1 */
+    justify-content: space-between; /* 2 */
+    padding: 1rem 5rem; /* 3 */
+}
+  
+nav ul {
+    display: flex; /* 5 */
+    list-style: none; /* 6 */
+}
+  
+nav li {
+    padding-left: 2rem; /* 7! */
+
+}
+h2 a{
+    color: white;
+    font-size: 55px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+a:hover{
+    color:  #fff0b3;
+}
+
+.about-div{
+    padding: 10%;
+}
+
+.about-me h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.about-me p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.skills{
+    color: white;
+    text-align: center;
+}
+.skills h1{
+    font-size: 50px;
+}
+.skills #all-langs{
+    display: inline-block;
+    justify-content: center;
+    padding-right: 30px;
+    padding-top: 20px;
+    font-size: 30px;
+}
+.skills img{
+    width: 30px;
+}
+
+.projects{
     color: white;
 }
 
-a,.btn {
-  transition: all 300ms ease;
+.projects h1{
+    padding-top: 100px;
+    font-size: 50px;
+    text-align: center;
+
+}
+.project-1 img{
+    border-radius: 100px;
+    border:  rgb(0, 0, 0) solid 7px;
+    width: 400px;
+    margin-left: 120px;
+    margin-top: 4%;
+    height: 400px;
+
 }
 
-nav,
-.nav-links {
+.project-1 #pong-logo{
+    width: 400px;
+    margin-left: 100px;
+    border-radius: 100px;
+    margin-top: 70px;
+    float: right;
+    margin-right:150px;
+    height: 370px;
+    border: black solid 15px;
+}
+
+.mine-sweep span {
+  display: inline-block;
+  margin: 1px;
+}
+
+.animated-button,
+.animated-button-2 {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  font-weight: 600;
+  color: black;
+  box-shadow: 0 0 0 2px #00000020;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+ 
+}
+
+.animated-button span:last-child,
+.animated-button-2 span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #080016;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span:first-child,
+.animated-button-2 span:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-button:hover,
+.animated-button-2:hover {
+  box-shadow: 0 0 0 5px #340fb7;
+  color: #ffffff;
+}
+
+.animated-button:active,
+.animated-button-2:active {
+  transform: scale(0.95);
+}
+
+.animated-button:hover span:last-child,
+.animated-button-2:hover span:last-child {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+}
+
+.animated-button{
+  margin-left: 250px;
+  margin-right: 780px;
+}
+
+#contact {
+  background-color: transparent; /* Transparent white background */
+  padding: 40px; /* Add some padding for spacing */
+  text-align: center; /* Center-align the content */
+}
+
+.title {
+  font-size: 40px; /* Adjust the title font size as needed */
+  margin-top: 10px;
+  color: white; /* Add margin to separate the title from the text */
+}
+
+.section__text__p1 {
+  font-size: 18px; /* Adjust the font size of the section text */
+}
+
+.contact-info-upper-container {
   display: flex;
+  justify-content: center; /* Center-align the inner content horizontally */
+  align-items: center; /* Center-align the inner content vertically */
+  margin-top: 20px; /* Add margin to separate from the title */
 }
 
-nav {
-  
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
-
+.contact-info-container {
+  margin: 0 20px; /* Add margin between contact info blocks */
 }
 
-.nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-  
+.icon {
+  width: 50px; /* Adjust the icon size as needed */
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle; /* Vertically center the icons with text */
+}
+
+.contact-icon {
+  margin-right: 10px; /* Add margin to separate the icon from the text */
 }
 
 a {
-    color: black;
-    text-decoration: none;
-    text-decoration-color: white;
+  text-decoration: none; /* Remove underlines from links */
+  color: #ffffff; /* Adjust link color as needed */
 }
+
 a:hover {
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
-}
-.logo {
-   font-size: 2rem;
+  color: #fff0b3;
 }
 
-.logo:hover {
-  cursor: default;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-}
-li {
-  display: block;
-  margin
-
-
-section {
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
-}
-  
-.section-container {
-    display: flex;
-}
-}
